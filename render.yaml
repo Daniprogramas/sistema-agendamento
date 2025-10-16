@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: sistema-agendamento
+    env: node
+    rootDir: backend
+    startCommand: npm start
+    envVars:
+      - key: DB_HOST
+        value: seu_host_mysql
+      - key: DB_USER
+        value: seu_usuario
+      - key: DB_PASS
+        value: sua_senha
+      - key: DB_NAME
+        value: agendamentos
